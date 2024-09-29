@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Capas dos Livros</title>
+    <style>
+        /* Definir o tamanho da página A4 */
+        @page {
+            size: 210mm 297mm; /* Dimensão A4 */
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 210mm;
+        }
+
+        .container {
+            width: 205mm;
+        }
+
+        .book-bookCover {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 55mm;
+            border: 1px solid #000;
+            align-content: center;
+            justify-content: space-between;
+            text-align: center;
+            page-break-inside: avoid;
+        }
+
+        .title {
+            padding: 20px 0px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .subtitle {
+            padding: 10px 0px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .author {
+            margin-top: 20px;
+            padding: 10px 0px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .publisher {
+            padding: 5px 0px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    #{content}
+</div>
+</body>
+</html>
